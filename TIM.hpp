@@ -7,6 +7,20 @@
 
 using namespace std;
 
-int integrate(const int my_int);
+class QuadTri{
+  
+private:
+  float *m_Nodes;
+  float *m_Weights;
+
+public:
+
+  QuadTri();
+  QuadTri(const float *TriangleCoord);
+  
+};
+
+// Functions that computes the area of an element given its Nodes indexes
+float ComputeAreaElement(const float* vec1, const float* vec2);
 
 #endif

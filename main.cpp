@@ -8,11 +8,16 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-  cout << "Hello world !" << "\n";
 
-  int my_int =2;
-  
-  cout << integrate(my_int) << endl;
+  float* vec1 = (float *) malloc(sizeof(float)*2);
+  vec1[0] = 1;
+  vec1[1] = 0;
+
+  float* vec2 = (float *) malloc(sizeof(float)*2);
+  vec2[1] = 1;
+  vec2[0] = 0;
+
+  cout << ComputeAreaElement(vec1,vec2) << "\n";
   
   return 0;
 }
