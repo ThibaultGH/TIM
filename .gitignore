@@ -1,3 +1,6 @@
+# Bash files
+*.sh
+
 # Emacs files
 *~
 
