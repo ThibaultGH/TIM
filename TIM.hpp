@@ -15,8 +15,15 @@ private:
 
 public:
 
+  // Constructors
   QuadTri();
   QuadTri(const float *TriangleCoord);
+
+  //Gets
+  float* Nodes() const;
+  float* Weights() const;
+  float Nodes(const int i0, const int i1) const;
+  float Weights(const int i0) const;
   
 };
 
