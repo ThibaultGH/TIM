@@ -10,8 +10,12 @@ using namespace std;
 class QuadTri{
   
 private:
+
+  // float* m_RefTriangle;
   float *m_Nodes;
   float *m_Weights;
+  float m_AreaTriangle;
+  // float *m_MatrixToRefTriangle;
 
 public:
 
@@ -24,6 +28,8 @@ public:
   float* Weights() const;
   float Nodes(const int i0, const int i1) const;
   float Weights(const int i0) const;
+
+  float ComputeIntegral();
   
 };
 

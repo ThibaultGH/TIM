@@ -19,14 +19,7 @@ int main(int argc, char *argv[])
 
   // cout << ComputeAreaElement(vec1,vec2) << "\n";
 
-
   QuadTri my_quad;
-  float* nodes = my_quad.Nodes();
-  for (int i0 = 0; i0 < 3; ++i0) {
-    for (int i1 = 0; i1 < 2; ++i1) {
-      cout << nodes[i0*2+i1] << "\n";
-    }
-  }
 
   
   return 0;
